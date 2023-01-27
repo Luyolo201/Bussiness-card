@@ -1,0 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background:url('/img/wallpaperflare.com_wallpaper.jpg') ;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+    z-index: 1;
+}
+
+body::after{
+    content: '';
+    position: absolute;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+    margin-top: -200px;
+    margin-left: -10px;
+    width: 100vw;
+    height: 1000px;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+
+.card {
+    max-width: 3000px;
+    border: 3px solid yellow;
+    border-radius: 20px;
+    border-width: 70px;
+    padding: 20px 200px;
+    align-items: center ;
+    margin-top: 150px;
+    margin-left: 450px;
+    color: white;
+    
+}
+
+.card:hover{
+    background-color: white;
+    transition: 1s;
+    color: black;
+    font-size: 1rem;
+    box-shadow: 20px 20px 20px;
+}
+
+
+
+
+
+.card img{
+    margin-left: 65px;
+    border-radius: 50% 50%;
+    height: 150px;
+    width: 150px;
+   
+}
+.card-body{
+  
+    text-align: center;
+    justify-content: center;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    
+}
+
+.card-body li i{
+    width: 100px;
+    margin-left: -20px;
+    list-style: none;
+
+}
